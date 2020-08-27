@@ -15,7 +15,7 @@ class Var(object):
     DEVLOPERS = set(int(x) for x in os.environ.get("DEVLOPERS", "813878981").split())
     OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "953414679").split())
     SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "719195224").split())
-    PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None))
+    PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", "-1001492152928"))
     LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
