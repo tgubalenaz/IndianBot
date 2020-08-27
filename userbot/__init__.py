@@ -60,7 +60,7 @@ if bool(ENV):
         quit(1)
 
     # Logging channel/group configuration.
-    BOTLOG_CHATID = os.environ.get("BOTLOG_CHATID", -1001492152928)
+    BOTLOG_CHATID = os.environ.get("BOTLOG_CHATID", None)
     try:
         BOTLOG_CHATID = int(BOTLOG_CHATID)
     except:
