@@ -55,7 +55,7 @@ async def endmute(event):
     if event.fwd_from:
         return
     elif event.is_private:
-        await event.edit("Unexpected issues or ugly errors may occur!")
+        await event.edit("🙊 Sto per smutare questa scimmia...")
         await asyncio.sleep(3)
         private = True
     if any([x in event.raw_text for x in ("/unmute", "!unmute", "aunmute", "bunmute", "cunmute", "dunmute", "eunmute", "funmute", "gunmute", "hunmute", "iunmute", "junmute", "kunmute", "lunmute", "munmute", "nunmute", "ounmute", "punmute", "qunmute", "runmute", "sunmute", "tunmute", "uunmute", "vunmute", "wunmute", "xunmute", "yunmute", "zunmute" )]):
@@ -78,7 +78,7 @@ async def endmute(event):
         except Exception as e:
             await event.edit("Error occured!\nError is " + str(e))
         else:
-            await event.edit("Successfully unmuted that person\n乁( ◔ ౪◔)「    ┑(￣Д ￣)┍")
+            await event.edit("Scimmia smutata 😇!")
             
 
 @command(incoming=True)
