@@ -6,7 +6,7 @@ from uniborg.util import admin_cmd
 from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
-PM_IMG = "https://telegra.ph/file/4d6171ac924c6a11dfe83.png"
+PM_IMG = "https://telegra.ph/file/46650e318417173ab0f61.jpg"
 pm_caption = "**Userbot di** @LordRxnS **ONLINE ✅**\n\n"
 pm_caption += "**🛠 STATO SISTEMA:**\n"
 pm_caption += "**❕ Versione Telethon:** 6.0.9\n🐍 **Python:** 3.7.4\n"
