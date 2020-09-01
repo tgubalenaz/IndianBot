@@ -32,11 +32,9 @@ async def _(event):
 
    # if input_str == "lovelang":
 
-    await event.edit("lovelang")
+    await event.edit(" TI AMO")
 
     animation_chars = [
-
-            "TI AMO",
 
             "TE AMO",
 
