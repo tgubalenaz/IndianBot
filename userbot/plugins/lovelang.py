@@ -32,27 +32,25 @@ async def _(event):
 
    # if input_str == "lovelang":
 
-    await event.edit(" TI AMO")
+    await event.edit(" TI AMO 🇮🇹")
 
     animation_chars = [
 
-            "TE AMO",
+            "I LOVE YOU 🇱🇷",
 
-            "I LOVE YOU",
+            "JE T'AIME 🇨🇵",
 
-            "JE T'AIME",
+            "TE QUIERO 🇪🇦",
 
-            "TE QUIERO",
+            "EU TE AMO 🇵🇹",
 
-            "EU TE AMO",
+            "TE IUBESC 🇷🇴",
 
-            "TE IUBESC",
+            "Я тебя люблю 🇷🇺",
 
-            "Я тебя люблю",
+            "AISHITERU 🇯🇵",
 
-            "AISHITERU",
-
-            "我愛你。"
+            "我愛你 🇨🇳"
         ]
 
     for i in animation_ttl:
