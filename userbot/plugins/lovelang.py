@@ -30,7 +30,7 @@ async def _(event):
 
     #input_str = event.pattern_match.group(1)
 
-   # if input_str == "fuk":
+   # if input_str == "💝💝💝💝💝💝":
 
     await event.edit("fuk")
 
@@ -61,6 +61,6 @@ async def _(event):
 
         await asyncio.sleep(animation_interval)
 
-        await event.edit(animation_chars[i % 10])
+        await event.edit(animation_chars[i % 20])
 
 
