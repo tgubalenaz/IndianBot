@@ -32,7 +32,7 @@ async def _(event):
 
    # if input_str == "clowntester":
 
-    await event.edit("❗ ESEGUO CONTROLLO SULL'UTENTE SELEZIONATO ❗")
+    await event.edit("❗ **ESEGUO CONTROLLO SULL'UTENTE SELEZIONATO** ❗")
 
     animation_chars = [
 
