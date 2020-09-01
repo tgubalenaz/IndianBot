@@ -24,7 +24,7 @@ async def _(event):
 
         return
 
-    animation_interval = 3
+    animation_interval = 2
 
     animation_ttl = range(0, 101)
 
@@ -32,23 +32,23 @@ async def _(event):
 
    # if input_str == "clowntester":
 
-    await event.edit("❗ **ESEGUO CONTROLLO SULL'UTENTE SELEZIONATO** ❗")
+    await event.edit("🔍 **ESEGUO CONTROLLO SULL'UTENTE SELEZIONATO**")
 
     animation_chars = [
 
             "Clown tester avviato. ✅",
 
-            "🔎 Verifico.",
+            "🔎 **Verifico.**",
 
-            "🔎 Verifico..",
+            "🔎 **Verifico..**",
 
-            "🔎 Verifico...",
+            "🔎 **Verifico...**",
 
-            "🔎 Verifico....",
+            "🔎 **Verifico....**",
 
             "🔦 L'utente selezionato sembra essere un clown!",
 
-            "Sei un clown al 98% 🤡"
+            "**Sei un clown al 98% 🤡**"
         ]
 
     for i in animation_ttl:
