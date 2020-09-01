@@ -30,9 +30,9 @@ async def _(event):
 
     #input_str = event.pattern_match.group(1)
 
-   # if input_str == "💝💝💝💝💝💝":
+   # if input_str == "lovelang":
 
-    await event.edit("💝💝💝💝💝💝")
+    await event.edit("lovelang")
 
     animation_chars = [
 
