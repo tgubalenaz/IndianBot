@@ -6,7 +6,7 @@ from uniborg.util import admin_cmd
 from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
-PM_IMG = "https://telegra.ph/file/a70a13fdfa5abe61d5e7f.jpg"
+PM_IMG = "https://telegra.ph/file/4161fabad95cc63d78a64.png"
 pm_caption = "**🎊🎉 Congratulazioni!!**\n\n"
 pm_caption += "Non avevo mai letto così tante pagliacciate in una volta sola e ho deciso di conferirti un riconoscimento..\n"
 pm_caption += "**SEI UFFICIALMENTE UN NUOVO PAGLIACCIO DI NAZLAND! 🤡**"
