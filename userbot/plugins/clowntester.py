@@ -48,7 +48,7 @@ async def _(event):
 
             "🔦 L'utente selezionato sembra essere un clown!",
 
-            "<a href='tg://user?id={}'>{}</a> **Sei un clown al 98% 🤡**"
+            "**Sei un clown al 98% 🤡**"
         ]
 
     for i in animation_ttl:
