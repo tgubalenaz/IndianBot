@@ -31,16 +31,16 @@ async def _(event):
 
 @borg.on(admin_cmd("clown"))
 async def friday(alive):
-    chat = await clown.get_chat()
+    chat = await alive.get_chat()
     """ For .alive command, check if the bot is running.  """
-    await borg.send_file(clown.chat_id, PM_IMG,caption=pm_caption)
-    await clown.delete()
+    await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
+    await alive.delete()
     
     @borg.on(admin_cmd("clown", allow_sudo=True))
 async def friday(alive):
-    chat = await clown.get_chat()
+    chat = await alive.get_chat()
     """ For .alive command, check if the bot is running.  """
-    await borg.send_file(clown.chat_id, PM_IMG,caption=caption)
+    await borg.send_file(alive.chat_id, PM_IMG,caption=caption)
     
     caption = """<b>Extracted Userdata From IndianBhai's DATABASE<b>
 <b>ID</b>: <code>{}</code>
