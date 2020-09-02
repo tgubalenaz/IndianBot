@@ -17,7 +17,6 @@ async def _(event):
     if replied_user is None:
         await event.edit(str(error_i_a))
         return False
-    replied_user_profile_photos_count = "NaN"
     try:
         replied_user_profile_photos_count = replied_user_profile_photos.count
     except AttributeError as e:
