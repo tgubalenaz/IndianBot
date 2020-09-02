@@ -17,9 +17,6 @@ async def _(event):
     if replied_user is None:
         await event.edit(str(error_i_a))
         return False
-    try:
-        replied_user_profile_photos_count = replied_user_profile_photos.count
-    except AttributeError as e:
         pass
     user_id = replied_user.user.id
     first_name = html.escape(replied_user.user.first_name)
