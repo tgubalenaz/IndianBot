@@ -35,9 +35,6 @@ async def _(event):
 <b>Person Name</b>: <a href='tg://user?id={}'>{}</a>
 <b>Last Name</b>:<code>{}</code>
 <b>Bio</b>: <code>{}</code>
-<b>DC ID</b>: {}
-<b>Restricted?</b> : {}
-<b>Verified</b>: {}
 <b>Bot(nub)</b>: {}
 <b>Groups in Common</b>: {}
 """.format(
@@ -46,9 +43,6 @@ async def _(event):
         first_name,
         last_name,
         user_bio,
-        dc_id,
-        replied_user.user.restricted,
-        replied_user.user.verified,
         replied_user.user.bot,
         common_chats
     )
