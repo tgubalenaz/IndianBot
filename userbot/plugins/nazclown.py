@@ -11,16 +11,16 @@ pm_caption = "**🎊 Congratulazioni! 🎉**\n"
 pm_caption += "Non avevo mai letto così tante pagliacciate in una volta sola e ho deciso di conferirti un riconoscimento..\n\n"
 pm_caption += "**SEI UFFICIALMENTE UN NUOVO PAGLIACCIO DI NAZLAND! 🤡**"
 
-@borg.on(admin_cmd(pattern=r"clown"))
-async def friday(alive):
+@borg.on(admin_cmd("nazclown"))
+async def friday(nazclown):
     chat = await alive.get_chat()
     """ For .alive command, check if the bot is running.  """
     await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
     await alive.delete()
 
     
-@borg.on(admin_cmd(pattern=r"clown", allow_sudo=True))
-async def friday(alive):
+@borg.on(admin_cmd(pattern=r"nazclown", allow_sudo=True))
+async def friday(nazclown):
     chat = await alive.get_chat()
     """ For .alive command, check if the bot is running.  """
     await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
