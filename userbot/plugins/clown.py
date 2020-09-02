@@ -6,7 +6,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 from userbot.utils import admin_cmd
-
+PM_IMG = "https://telegra.ph/file/a70a13fdfa5abe61d5e7f.jpg"
 
 @borg.on(admin_cmd("clown"))
 async def _(event):
@@ -28,6 +28,12 @@ async def _(event):
     if user_bio is not None:
         user_bio = html.escape(replied_user.about)
     common_chats = replied_user.common_chats_count
+
+@borg.on(admin_cmd(pattern=r"clown", allow_sudo=True))
+async def friday(alive):
+    chat = await alive.get_chat()
+    """ For .alive command, check if the bot is running.  """
+    await borg.send_file(alive.chat_id, PM_IMG,caption=caption)
     
     caption = """<b>Extracted Userdata From IndianBhai's DATABASE<b>
 <b>ID</b>: <code>{}</code>
