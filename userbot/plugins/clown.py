@@ -29,14 +29,14 @@ async def _(event):
         user_bio = html.escape(replied_user.about)
     common_chats = replied_user.common_chats_count
 
-@borg.on(admin_cmd(pattern=r"clown"))
+@borg.on(admin_cmd("clown"))
 async def friday(clown):
     chat = await clown.get_chat()
     """ For .alive command, check if the bot is running.  """
     await borg.send_file(clown.chat_id, PM_IMG,caption=pm_caption)
     await clown.delete()
     
-    @borg.on(admin_cmd(pattern=r"clown", allow_sudo=True))
+    @borg.on(admin_cmd("clown", allow_sudo=True))
 async def friday(clown):
     chat = await clown.get_chat()
     """ For .alive command, check if the bot is running.  """
