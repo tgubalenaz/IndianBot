@@ -2,7 +2,6 @@
 Syntax: .clown @username"""
 
 import html
-from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
@@ -54,7 +53,6 @@ async def _(event):
         caption,
         reply_to=message_id_to_reply,
         parse_mode="HTML",
-        file=replied_user.profile_photo,
         force_document=False,
         silent=True
     )
