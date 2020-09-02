@@ -36,7 +36,6 @@ async def _(event):
 <b>Last Name</b>:<code>{}</code>
 <b>Bio</b>: <code>{}</code>
 <b>DC ID</b>: {}
-<b>Number of PPs</b>: {}
 <b>Restricted?</b> : {}
 <b>Verified</b>: {}
 <b>Bot(nub)</b>: {}
@@ -48,7 +47,6 @@ async def _(event):
         last_name,
         user_bio,
         dc_id,
-        replied_user_profile_photos_count,
         replied_user.user.restricted,
         replied_user.user.verified,
         replied_user.user.bot,
