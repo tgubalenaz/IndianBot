@@ -1,4 +1,4 @@
-"""QuotLy: Avaible commands: .test
+"""QuotLy: Avaible commands: .rxbot
 """
 import datetime
 from telethon import events
@@ -8,7 +8,7 @@ from userbot import bot, CMD_HELP
 from userbot.utils import admin_cmd
 
 #@register(outgoing=True, pattern="^.q(?: |$)(.*)")
-@borg.on(admin_cmd(pattern=r"qtest(?: |$)(.*)"))
+@borg.on(admin_cmd(pattern=r"rxbot(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from:
         return 
