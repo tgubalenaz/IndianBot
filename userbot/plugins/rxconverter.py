@@ -18,8 +18,6 @@ async def _(event):
     reply_message = await event.get_reply_message() 
     if not reply_message.media:
        await event.edit("Inoltro comando a @GucciRxnSConverterBOT")
-    elif not reply_message.text:
-       await event.edit("Inoltro comando a @GucciRxnSConverterBOT")
        return
     chat = "@GucciRxnSConverterBOT"
     sender = reply_message.sender
