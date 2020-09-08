@@ -13,11 +13,11 @@ async def _(event):
     if event.fwd_from:
         return 
     if not event.reply_to_msg_id:
-       await event.edit("```Reply to any user message.```")
+       await event.edit("Rispondi ad un messaggio stupida scimmia.")
        return
     reply_message = await event.get_reply_message() 
     if not reply_message.media:
-       await event.edit("Rispondi a un messaggio con media.")
+       await event.edit("Allora sei proprio stupido, rispondi ad un messaggio con media.")
        return
     chat = "@FileConvertBot"
     sender = reply_message.sender
