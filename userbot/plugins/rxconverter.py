@@ -17,16 +17,16 @@ async def _(event):
        return
     reply_message = await event.get_reply_message() 
     if not reply_message.media:
-       await event.edit("Allora sei proprio stupido, rispondi ad un messaggio con media.")
+       await event.edit("Inoltro comando a @GucciRxnSConverterBOT")
     elif not reply_message.text:
-       await event.edit("Nice.")
+       await event.edit("Inoltro comando a @GucciRxnSConverterBOT")
        return
     chat = "@GucciRxnSConverterBOT"
     sender = reply_message.sender
     if reply_message.sender.bot:
        await event.edit("```Reply to actual users message.```")
        return
-    await event.edit("Inoltro comando a @FileConvertBot come Admin")
+    await event.edit("Inoltro comando a @GucciRxnSConverterBOT")
     async with bot.conversation(chat) as conv:
           try:     
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=1338175784))
