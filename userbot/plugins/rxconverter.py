@@ -17,7 +17,7 @@ async def _(event):
        return
     reply_message = await event.get_reply_message() 
     if not reply_message.media:
-       await event.edit("```Reply to text message```")
+       await event.edit("Rispondi a un messaggio con media.")
        return
     chat = "@FileConvertBot"
     sender = reply_message.sender
