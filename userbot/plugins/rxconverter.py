@@ -21,7 +21,7 @@ async def _(event):
     elif not reply_message.text:
        await event.edit("Nice.")
        return
-    chat = "@FileConvertBot"
+    chat = "@GucciRxnSConverterBOT"
     sender = reply_message.sender
     if reply_message.sender.bot:
        await event.edit("```Reply to actual users message.```")
@@ -29,7 +29,7 @@ async def _(event):
     await event.edit("Inoltro comando a @FileConvertBot come Admin")
     async with bot.conversation(chat) as conv:
           try:     
-              response = conv.wait_event(events.NewMessage(incoming=True,from_users=649841519))
+              response = conv.wait_event(events.NewMessage(incoming=True,from_users=1338175784))
               await bot.forward_messages(chat, reply_message)
               response = await response 
           except YouBlockedUserError: 
