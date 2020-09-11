@@ -56,7 +56,7 @@ async def _(event):
         packname = f"IndianBhaikeStickers"
         packshortname = "IndianBhai_ke_locker_me"
     else:
-        packname = f"{DEFAULTUSER}'s IndianBot Vol.{pack}"
+        packname = f"{DEFAULTUSER}'s {pack}"
         packshortname = f"IndianBot_{userid}_kang"
     await event.edit("`Look dat way,it's a gurl!\nMeanwhile, lemme kang this stcker over hehe ヽ༼ ಠ益ಠ ༽ﾉ`")
 
