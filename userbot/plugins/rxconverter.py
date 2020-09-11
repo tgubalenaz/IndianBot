@@ -17,12 +17,12 @@ async def _(event):
        return
     reply_message = await event.get_reply_message() 
     if not reply_message.media:
-       await event.edit("Inoltro comando a @GucciRxnSConverterBOT")
+       await event.edit("Rispondi ad un messaggio con media.")
        return
     chat = "@GucciRxnSConverterBOT"
     sender = reply_message.sender
     if reply_message.sender.bot:
-       await event.edit("```Reply to actual users message.```")
+       await event.edit("Rispondi al messaggio di un utente.")
        return
     await event.edit("Inoltro comando a @GucciRxnSConverterBOT")
     async with bot.conversation(chat) as conv:
@@ -31,10 +31,10 @@ async def _(event):
               await bot.forward_messages(chat, reply_message)
               response = await response 
           except YouBlockedUserError: 
-              await event.reply("```Please unblock @QuotLyBot and try again```")
+              await event.reply("Sblocca GucciRxnSConverterBOT")
               return
           if response.text.startswith("Hi!"):
-             await event.edit("```Can you kindly disable your forward privacy settings for good?```")
+             await event.edit("Disattiva le impostazioni privacy sull'inoltro dei messaggi.")
           else: 
              await event.delete()   
              await bot.forward_messages(event.chat_id, response.message)
