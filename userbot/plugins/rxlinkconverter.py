@@ -17,12 +17,12 @@ async def _(event):
        return
     reply_message = await event.get_reply_message() 
     if not reply_message.text:
-       await event.edit("Inoltro comando a @GucciRxnSConverterBOT")
+       await event.edit("Rispondi ad un messaggio contenente un link.")
        return
     chat = "@GucciRxnSConverterBOT"
     sender = reply_message.sender
     if reply_message.sender.bot:
-       await event.edit("Reply to actual users message.")
+       await event.edit("Rispondi ad un messaggio.")
        return
     await event.edit("Inoltro comando a @GucciRxnSConverterBOT")
     async with bot.conversation(chat) as conv:
