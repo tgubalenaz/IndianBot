@@ -46,7 +46,7 @@ async def _(event):
 
             "🔎 **Verifico....**",
 
-            "🔦 L'utente selezionato sembra essere un clown!",
+            "🔦 L'utente selezionato sembra essere un simp!",
 
             "**Sei un simp al 98% 🤫**"
         ]
